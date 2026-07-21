@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS service_location text[], ADD COLUMN IF NOT EXISTS payment_methods text[];

@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS is_pioneer boolean NOT NULL DEFAULT false;
