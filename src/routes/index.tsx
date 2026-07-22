@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { z } from "zod";
-import { zodValidator } from "@tanstack/zod-adapter";
 import {
   ChevronLeft,
   ChevronRight,
@@ -88,7 +87,7 @@ const searchSchema = z.object({
 });
 
 export const Route = createFileRoute("/")({
-  validateSearch: zodValidator(searchSchema),
+  validateSearch: searchSchema,
   head: () => ({
     meta: [
       {
